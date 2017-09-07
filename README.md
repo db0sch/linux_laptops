@@ -4,13 +4,15 @@ A list of linux friendly laptops
 
 ![boromir_meme](https://i.imgflip.com/18xlvc.jpg)
 
-## important rules 
+## important rules
 - avoid consumer laptops. they might carry some bios/uefi restrictions which prevent installing linux on these machines. professional series laptops are more suitable (but might be more expensive)
 - avoid touch screen:
   1. linux UI not very touch compatible
   2. might create issues
-- avoid Nvidia graphics card: always prefer intel graphic cards as they provide open source drivers. Nvidia can cause issues which are difficult to debug. The situation might be better now though (with the `nouveau` drivers). I invite you to check the best linux compatible nvidia cards on the web (more info here: https://wiki.archlinux.org/index.php/NVIDIA) 
+- be careful with Nvidia graphics card: always prefer intel graphic cards as they provide open source drivers. Nvidia can cause issues which are difficult to debug. The situation might be better now though (with the `nouveau` drivers). I invite you to check the best linux compatible nvidia cards on the web (more info here: https://wiki.archlinux.org/index.php/NVIDIA)
 - avoid exotic brands (unless they are officialy supporting linux). The common models and brands are well documented by the community. Easier for troubleshouting.
+- USB-C is eating the world (of laptops). Some laptops have just one port. So keep that in mind if you need retro-compatibility with older hardware, and even to connect to a beamer (might need to purchase an adapter)
+- Some manufacturer are now configuring the hard disks in Raid, which can make the linux installation more complex (especially for Dual Boot).
 
 ## brands
 
@@ -18,6 +20,7 @@ A list of linux friendly laptops
 
 The XPS series:
 - XPS 13 | [Dell website](http://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/xps-13/spd/xps-13-9360-laptop)
+  *  2x USB 3, 1x USB-C and 1x SD card slot
 - XPS 13 Developper Edition | [Dell website](http://www.dell.com/en-us/shop/cty/pdp/spd/xps-13-linux)
   // The developper edition comes with Ubuntu linux pre-installed (no windows though)
 
@@ -33,13 +36,17 @@ Avoid consumer laptops from Lenovo at all cost. For two reasons:
 Go with the thinkpad models: http://www3.lenovo.com/us/en/think/
 as they are known for the compatibility with linux (many sys admin use thinkpad on linux)
 
-The X series: 
+The X series:
 - X270 (and older version, until x220)
 - X1 Carbon (quite expensive though)
 
 The T series:
 - T470 (and older version, such as T450)
 - T470s (slim version)
+
+Yoga series:
+- Yoga 720 13" (1 USB-C for power, 1 extra USB-C, 1 USB 3, no HDMI)
+  * it's shipped with a RAID system, which might be an issue to install linux. If you disable it in the bios, it will mess with Windows (might need to completely ditch Windows)
 
 ### HP
 
@@ -58,9 +65,12 @@ All their laptops are compatible with linux (at least ubuntu and derivatives), n
 
 ### Asus
 
-No experience in installing linux on Asus laptops.
-Please feel free to contribute to this repo if you have information on this.
-
+  - Asus zenbook 13"
+    * only 1x USB-C port. Might need an adapter for other ports
+  - Asus R415UQ
+    * Nvidia graphics inside, but driver seems to work well
+  - Asus R510J
+    * Nvidia 800+ series graphics inside, but driver seems to work well
 
 ### Acer
 
@@ -87,7 +97,7 @@ It is then possible to install a "real" linux distribution on it.
 GalliumOS: https://galliumos.org/
 You can check the hardware compatibility with Chromebooks here: https://wiki.galliumos.org/Hardware_Compatibility
 
-There is also [crouton](https://github.com/dnschneid/crouton), but it seems a bit more trickier than GalliumOS
+There is also [crouton](https://github.com/dnschneid/crouton), but it actually run a linux alongside ChromeOS. So you can switch between the two. Drawback: it consums lots a memory. (And you don't really need to OS at the same time)
 
 ## Distributions
 
@@ -117,8 +127,11 @@ Never tried it. I know at least one student who installed it. Very advanced. Do 
 Never tried. Might be good. But same issues as OpenSuse. Not same architecture. Might be tricky to get Le Wagon setup to work on it.
 
 ### Solus
-New. Looks promising. Never tried though.
+New. Looks promising.
+One alumni is using it, works well.
+(just a incompatibility with Ruby 2.3.4 and the kernel, fixed in 2.4.1)
 
+List of supported device for Solus: https://solus-project.com/articles/hardware/laptops/en/
 
 ## Resources
 
