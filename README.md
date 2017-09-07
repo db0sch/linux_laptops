@@ -5,11 +5,12 @@ A list of linux friendly laptops
 ![boromir_meme](https://i.imgflip.com/18xlvc.jpg)
 
 ## important rules 
-- try to avoid consumer laptops. they might carry some bios/uefi restrictions which prevent installing linux on these machines. professional series laptops are more suitable (but might be more expensive)
+- avoid consumer laptops. they might carry some bios/uefi restrictions which prevent installing linux on these machines. professional series laptops are more suitable (but might be more expensive)
 - avoid touch screen:
   1. linux UI not very touch compatible
   2. might create issues
 - avoid Nvidia graphics card: always prefer intel graphic cards as they provide open source drivers. Nvidia can cause issues which are difficult to debug. The situation might be better now though (with the `nouveau` drivers). I invite you to check the best linux compatible nvidia cards on the web (more info here: https://wiki.archlinux.org/index.php/NVIDIA) 
+- avoid exotic brands (unless they are officialy supporting linux). The common models and brands are well documented by the community. Easier for troubleshouting.
 
 ## brands
 
@@ -77,4 +78,53 @@ But models previous to 2016 should be Linux compatible. (not as seamless as Dell
 
 - Alpha - [website](https://alpha.store/product/litebook-laptop/)
 - ZaReason - [website](https://zareason.com/Laptops/)
+
+### Chromebooks
+
+ChromeOS is a Gnu/Linux based OS.
+It is then possible to install a "real" linux distribution on it.
+
+GalliumOS: https://galliumos.org/
+You can check the hardware compatibility with Chromebooks here: https://wiki.galliumos.org/Hardware_Compatibility
+
+There is also [crouton](https://github.com/dnschneid/crouton), but it seems a bit more trickier than GalliumOS
+
+## Distributions
+
+### Ubuntu
+At [le wagon](https://www.lewagon.com), we advise students to install [Ubuntu](https://www.ubuntu.com/) in dual boot along with their legacy OS (Microsoft Windows). We even have a full setup tutorial for this: [le wagon setup](https://github.com/lewagon/setup)
+
+### ElementaryOS
+Based on Ubuntu, and that's what I use daily on my Lenovo Thinkpad x250. Works out of the box, flawlessly.
+As it's based on Ubuntu, all the tools we use at Le Wagon are compatible.
+I chose this one for its interface simplicity, and it is lightweight (good for energy management on laptops).
+By far, Pantheon is the most elegant and beautiful Desktop Environment i've tried (the second one is Gnome, but a bit more heavy I think).
+
+### Linux Mint
+Never tried it, but several students/alumni use it. Base on Ubuntu as well. Seems to work perfectly.
+
+### Ubuntu derivatives (Lubuntu, Xubuntu, Ubuntu Mate)
+I only tried Ubuntu Mate. Works perfectly. Ugly though ;-)
+
+### OpenSuse
+I tried it. Works well. Especially `Tumbleweed` (rolling release distro). Always update to date with cutting edge packages.
+But not same package manager as Ubuntu, and not exactly the same architecture. Can be tricky to have Le Wagon steup working on it.
+
+### Arch
+Never tried it. I know at least one student who installed it. Very advanced. Do not try it unless you understand well Linux.
+
+### Fedora / CentOS
+Never tried. Might be good. But same issues as OpenSuse. Not same architecture. Might be tricky to get Le Wagon setup to work on it.
+
+### Solus
+New. Looks promising. Never tried though.
+
+
+## Resources
+
+Some resources for compabitility, tips and tutorials for laptops:
+- [linlap](http://www.linlap.com/)
+- [linux on laptop](http://www.linux-on-laptops.com/)
+- [archLinux / laptops](https://wiki.archlinux.org/index.php/Category:Laptops) | per brand and models information
+- [archlinux / laptop main page](https://wiki.archlinux.org/index.php/laptop)
 
