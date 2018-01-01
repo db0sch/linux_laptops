@@ -63,6 +63,12 @@ So if you want to keep Windows on the side (dual boot) for gaming or running any
 
 All their laptops are compatible with linux (at least ubuntu and derivatives), no wrong choices here.
 
+### StationX
+
+StationX is a linux pre-installed computer manufacturer. Lots of options available (Ubuntu, OpenSuse, Arch Linux, ...), different keyboard layout, and even the super-key sticker (the key with the windows logo on windows laptops).
+Not so expensive. Should give it a try one day.
+[website](https://stationx.rocks/)
+
 ### Asus
 
   - Asus zenbook 13"
